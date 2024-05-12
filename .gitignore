@@ -1,0 +1,4 @@
+gecko/*/*- Debug
+gecko/*/*- Release
+linux/.vscode
+linux/.vscode/*
