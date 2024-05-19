@@ -9,7 +9,7 @@
  *    A játék indtására a 'Space' gombbal van lehetőség.
  *    A játék során a játékos a 'W' és 'D' gombokkal tudja irányítani a kosarat.
  *       A játék 25 banánt dob ki, amiket a játékosnak el kell kapnia, ezután véget ér.
- *    A játék végeztável a mikrokontroller 'e' karakterrel kezdődő üzentet küld, amely tartalmazza a játékos pontszámát és a beállított nehézséget.
+ *    A játék végeztével a mikrokontroller 'e' karakterrel kezdődő üzentet küld, amely tartalmazza a játékos pontszámát és a beállított nehézséget.
  *    A játékos a pontszámát és a ranglistát megtekintheti, majd eldöntheti, hogy menti-e a pontszámát.
  * 
  * Az applikációból kilépésre a 'q' vagy 'x' karakterekkel van lehetőség.
@@ -75,7 +75,7 @@ void reset_input_mode() {
     tcsetattr(STDIN_FILENO, TCSANOW, &tattr);
 }
 
-/*
+/**
  * @brief Beállítja a soros portot: 115200 baud, 8 bites keretméret, nincs paritás, 1 stop bit.
  * @param tty_fd a soros port file descriptora.
  * @return void
