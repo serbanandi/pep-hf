@@ -4,10 +4,11 @@
 #include <task.h>
 #include <semphr.h>
 #include "init_game.h"
+#include "segmentlcd.h"
 #include "lcd.h"
 #include "uart.h"
 #include "game.h"
-#include "em_usart.h"
+#include <em_usart.h>
 
 /***************************************************************************//**
  * Initialize application.
@@ -16,15 +17,15 @@ TaskHandle_t display_handle;
 TaskHandle_t UART_handle;
 TaskHandle_t game_handle;
 
+
 /***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
 void app_init(void)
 {
-  USART_IntClear(UART0, USART_IF_RXDATAV);   //letöröljük a megszakítás flag-et
-  USART_IntEnable(UART0, USART_IEN_RXDATAV); //engedélyezzük a megszakítást
-  NVIC_ClearPendingIRQ(UART0_RX_IRQn); //letörli globálisan a megszakítást
-  NVIC_EnableIRQ(UART0_RX_IRQn);//engedélyezzük globálisan
+  SegmentLCD_Init(false);
+
+  UART0_Init();
 
   USART_Tx(UART0, 's'); //start jel küldése a számítógép felé
 
@@ -33,7 +34,7 @@ void app_init(void)
       "Display",
       configMINIMAL_STACK_SIZE,
       NULL,
-      tskIDLE_PRIORITY + 2,
+      tskIDLE_PRIORITY + 1,
       &display_handle);
 
   xTaskCreate(
@@ -41,7 +42,7 @@ void app_init(void)
       "Game",
       configMINIMAL_STACK_SIZE,
       NULL,
-      tskIDLE_PRIORITY + 1,
+      tskIDLE_PRIORITY + 2,
       &game_handle);
 
   xTaskCreate(

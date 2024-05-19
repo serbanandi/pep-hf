@@ -415,11 +415,6 @@
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream.h</locationURI>
 		</link>
 		<link>
-			<name>gecko_sdk_4.4.1/platform/service/iostream/inc/sl_iostream_stdlib_config.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_stdlib_config.h</locationURI>
-		</link>
-		<link>
 			<name>gecko_sdk_4.4.1/platform/service/iostream/inc/sl_iostream_uart.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_uart.h</locationURI>
@@ -438,16 +433,6 @@
 			<name>gecko_sdk_4.4.1/platform/service/iostream/src/sl_iostream.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.4.1/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.4.1/platform/service/iostream/src/sl_iostream_stdlib_config.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_stdlib_config.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.4.1/platform/service/iostream/src/sl_iostream_uart.c</name>

@@ -25,18 +25,14 @@ include:
 sdk: {id: gecko_sdk, version: 4.4.1}
 toolchain_settings: []
 component:
-- {id: EFM32GG990F1024}
-- {id: brd2200a}
-- {id: device_init}
-- {id: emlib_lcd}
-- {id: freertos_heap_2}
-- {id: iostream}
-- {id: iostream_retarget_stdio}
-- {id: iostream_stdlib_config}
-- instance: [vcom]
-  id: iostream_uart
-- {id: iostream_uart_core}
 - {id: sl_system}
+- {id: iostream}
+- {id: brd2200a}
+- {id: iostream_uart_core}
+- {id: emlib_lcd}
+- {id: device_init}
+- {id: freertos_heap_2}
+- {id: EFM32GG990F1024}
 define:
 - {name: DEBUG_EFM}
 ui_hints:

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
   <descriptors name="HF_Bananfa">
-    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:4.4.1._-569117586"/>
+    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:4.4.1._1775608612"/>
     <properties key="universalConfig.relativeWorkspacePath" value="..\HF_Bananfa.slcw"/>
     <properties key="universalConfig.generationDirectory" value=""/>
     <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>

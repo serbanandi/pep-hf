@@ -5,7 +5,6 @@
     <file name="sl_device_init_lfxo_config.h" generated="true" linked="false"/>
     <file name="FreeRTOSConfig.h" generated="true" linked="false"/>
     <file name="dmadrv_config.h" generated="true" linked="false"/>
-    <file name="sl_iostream_uart_vcom_config.h" generated="true" linked="false"/>
     <file name="sl_board_control_config.h" generated="true" linked="false"/>
     <file name="sl_debug_swo_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_hfxo_config.h" generated="true" linked="false"/>
