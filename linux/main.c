@@ -179,7 +179,7 @@ int main(int argc, char** argv)
 
    set_input_mode(); // terminál beállítása nem-kanonikus módba
 
-   serial_fd = open("/dev/ttyV1",O_RDWR); // soros port megnyitása
+   serial_fd = open("/dev/ttyACM0",O_RDWR); // soros port megnyitása
    setup_tty(serial_fd);                  // soros port beállítása
 
    bool exit_loop = false; // program bezárása, ha true
