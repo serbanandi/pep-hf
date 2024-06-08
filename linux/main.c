@@ -195,7 +195,7 @@ int main(int argc, char** argv)
    pfds[1].events = POLLIN; // beérkező adatok figyelése
 
    // timeout meghatározása
-   int timeout = 0; // 0 ms
+   int timeout = 50; // 50 ms
    while (!exit_loop) {
       
       int ret = poll(pfds, PFDSLEN, timeout); // poll hívás
